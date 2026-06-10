@@ -6,7 +6,7 @@
 
 const assets = {
   "player_footsoldier": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1779402407963_01KS6AC00VS10TD2ZR9HYH8V61.playerfootsold.webp",
+    "url": "assets/player_footsoldier.webp",
     "type": "image",
     "aspect_ratio": [
       895,
@@ -14,7 +14,7 @@ const assets = {
     ]
   },
   "player_spearman": {
-    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/player_spearman_f2429a65-65dc-4273-aba4-c2b4d6a78662.webp",
+    "url": "assets/player_spearman.webp",
     "type": "image",
     "aspect_ratio": [
       830,
@@ -22,7 +22,7 @@ const assets = {
     ]
   },
   "enemy_spearman": {
-    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/enemy_spearman_ac780e4e-3896-44b5-ba37-d6e0963787bd.webp",
+    "url": "assets/enemy_spearman.webp",
     "type": "image",
     "aspect_ratio": [
       832,
@@ -30,7 +30,7 @@ const assets = {
     ]
   },
   "player_archer": {
-    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/player_archer_8d8b58f9-603a-4f34-9673-43df7b16f260.webp",
+    "url": "assets/player_archer.webp",
     "type": "image",
     "aspect_ratio": [
       834,
@@ -38,7 +38,7 @@ const assets = {
     ]
   },
   "enemy_knight": {
-    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/enemy_knight_83d12faa-f8cd-4f6b-8780-456998a60d66.webp",
+    "url": "assets/enemy_knight.webp",
     "type": "image",
     "aspect_ratio": [
       529,
@@ -46,7 +46,7 @@ const assets = {
     ]
   },
   "icon_range": {
-    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/icon_range_f670bfe8-b502-4c83-b5e0-1a5e60419698.webp",
+    "url": "assets/icon_range.webp",
     "type": "image",
     "aspect_ratio": [
       1024,
@@ -54,7 +54,7 @@ const assets = {
     ]
   },
   "enemy_footsoldier": {
-    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/enemy_footsoldier_ad98fc11-bb2a-409f-8434-7282983a8cdf.webp",
+    "url": "assets/enemy_footsoldier.webp",
     "type": "image",
     "aspect_ratio": [
       831,
@@ -62,7 +62,7 @@ const assets = {
     ]
   },
   "enemy_archer_new": {
-    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/enemy_archer_new_aca8260f-f8fa-4649-8bae-dbdaba24bc01.webp",
+    "url": "assets/enemy_archer_new.webp",
     "type": "image",
     "aspect_ratio": [
       832,
@@ -70,7 +70,7 @@ const assets = {
     ]
   },
   "victory_screen_blue": {
-    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/victory_screen_blue_08666111-d6aa-4184-9065-504f22177fc1.webp",
+    "url": "assets/victory_screen_blue.webp",
     "type": "image",
     "aspect_ratio": [
       1248,
@@ -78,7 +78,7 @@ const assets = {
     ]
   },
   "defeat_screen_dejected_soldier": {
-    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/defeat_screen_dejected_soldier_5eab99db-d9ec-4ff6-a44b-b2fc7dca1b0b.webp",
+    "url": "assets/defeat_screen_dejected_soldier.webp",
     "type": "image",
     "aspect_ratio": [
       1248,
@@ -86,11 +86,11 @@ const assets = {
     ]
   },
   "defeat_tone": {
-    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/sounds/effect/defeat_tone_bfd84247-b8fe-4ff7-8b00-52de692a94e4.mp3",
+    "url": "assets/defeat_tone.mp3",
     "type": "audio"
   },
   "battlefield_grass": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1779402912131_01KS6AVCC3CVQDP77XAJ9JZX9V.field.webp",
+    "url": "assets/battlefield_grass.webp",
     "type": "image",
     "aspect_ratio": [
       1024,
@@ -98,7 +98,7 @@ const assets = {
     ]
   },
   "icon_coin": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1779405051051_01KS6CWN5B7WBEYNRMPDMSXYWF.coin.webp",
+    "url": "assets/icon_coin.webp",
     "type": "image",
     "aspect_ratio": [
       84,
@@ -106,35 +106,35 @@ const assets = {
     ]
   },
   "unit_deployment_trumpet": {
-    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/sounds/effect/unit_deployment_trumpet_a8a208ef-90b8-41b1-b473-fbf84221f2df.mp3",
+    "url": "assets/unit_deployment_trumpet.mp3",
     "type": "audio"
   },
   "unit_grunt_4": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1779412684323_01KS6M5KH3964TK5AQ7JWGWJXD.gruntx.mp3",
+    "url": "assets/unit_grunt_4.mp3",
     "type": "audio"
   },
   "unit_grunt_3": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1779412748175_01KS6M7HWFCF01PKD76E3ZQDV1.grunt3.mp3",
+    "url": "assets/unit_grunt_3.mp3",
     "type": "audio"
   },
   "unit_grunt_1": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1779412839514_01KS6MAB2TB4MEWEGBYHRFN22P.grunt4.mp3",
+    "url": "assets/unit_grunt_1.mp3",
     "type": "audio"
   },
   "sword_slash_2": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1779413262117_01KS6MQ7S5WYSMYX9GTP48JZM4.slash2.mp3",
+    "url": "assets/sword_slash_2.mp3",
     "type": "audio"
   },
   "sword_slash_3": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1779413119284_01KS6MJW9M5PTZ2HQW111BTDPD.slash1.mp3",
+    "url": "assets/sword_slash_3.mp3",
     "type": "audio"
   },
   "sword_slash_1": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1779413360314_01KS6MT7NTX3S01G8KYR5J5P2A.slash3.mp3",
+    "url": "assets/sword_slash_1.mp3",
     "type": "audio"
   },
   "world_map_image": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1779429857410_01KS74HP42NCTDXVSEYC8S4ZFD.image.webp",
+    "url": "assets/world_map_image.webp",
     "type": "image",
     "aspect_ratio": [
       666,
@@ -142,7 +142,7 @@ const assets = {
     ]
   },
   "battlefield_level_2": {
-    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/battlefield_level_2_ec56f9bf-9487-44e0-b23e-d639572a9a51.webp",
+    "url": "assets/battlefield_level_2.webp",
     "type": "image",
     "aspect_ratio": [
       1536,
@@ -150,7 +150,7 @@ const assets = {
     ]
   },
   "battlefield_level_3": {
-    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/battlefield_level_3_620b1590-4ffd-4418-9de6-e9ef6fc5382a.webp",
+    "url": "assets/battlefield_level_3.webp",
     "type": "image",
     "aspect_ratio": [
       832,
@@ -158,7 +158,7 @@ const assets = {
     ]
   },
   "commander_duke": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1780081947008_01KSTJDWC0W8GT1G5ANNQQX0JB.commander_duke.webp",
+    "url": "assets/commander_duke.webp",
     "type": "image",
     "aspect_ratio": [
       128,
@@ -166,7 +166,7 @@ const assets = {
     ]
   },
   "commander_baroness": {
-    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/commander_baroness_40d940c0-dca3-439e-861e-7adb9ec20cf6.webp",
+    "url": "assets/commander_baroness.webp",
     "type": "image",
     "aspect_ratio": [
       1023,
@@ -174,7 +174,7 @@ const assets = {
     ]
   },
   "commander_sir_swift": {
-    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/commander_sir_swift_3c473f87-e580-4854-a700-e4543eb8d11e.webp",
+    "url": "assets/commander_sir_swift.webp",
     "type": "image",
     "aspect_ratio": [
       1023,
@@ -182,7 +182,7 @@ const assets = {
     ]
   },
   "commander_high_guard": {
-    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/commander_high_guard_71433c41-9fb9-473f-9b39-620542cca254.webp",
+    "url": "assets/commander_high_guard.webp",
     "type": "image",
     "aspect_ratio": [
       1023,
@@ -190,7 +190,7 @@ const assets = {
     ]
   },
   "commander_monarch": {
-    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/commander_monarch_c2c69a4f-2822-4f91-8eaf-a71c6d8f0922.webp",
+    "url": "assets/commander_monarch.webp",
     "type": "image",
     "aspect_ratio": [
       1024,
@@ -198,7 +198,7 @@ const assets = {
     ]
   },
   "commander_baron_breach": {
-    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/commander_baron_breach_0a490323-5776-4963-830e-a7cceebb20d4.webp",
+    "url": "assets/commander_baron_breach.webp",
     "type": "image",
     "aspect_ratio": [
       1022,
@@ -206,7 +206,7 @@ const assets = {
     ]
   },
   "player_swordsman_new_v2": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1780307108852_01KT1958ZM5N7FATAZ6VTZ3YD9.swordsmanfront.webp",
+    "url": "assets/player_swordsman_new_v2.webp",
     "type": "image",
     "aspect_ratio": [
       213,
@@ -214,7 +214,7 @@ const assets = {
     ]
   },
   "enemy_swordsman_v2": {
-    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/enemy_swordsman_v2_8793a62b-03f8-49c1-8200-af791a24a91f.webp",
+    "url": "assets/enemy_swordsman_v2.webp",
     "type": "image",
     "aspect_ratio": [
       829,
@@ -222,7 +222,7 @@ const assets = {
     ]
   },
   "elite.webp": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1779566318751_01KSB6P54ZC6SWSPVJY81T0YVV.elite.webp",
+    "url": "assets/elite.webp",
     "type": "image",
     "aspect_ratio": [
       784,
@@ -230,11 +230,11 @@ const assets = {
     ]
   },
   "orc_war_cry": {
-    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/sounds/effect/orc_war_cry_6d0f9a65-bdab-478e-9012-8cb3bfe09845.mp3",
+    "url": "assets/orc_war_cry.mp3",
     "type": "audio"
   },
   "victory_monarch_throne": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1779967997999_01KSQ5RE1FW16W37KC73G6BZ5P.victory_monarch_throne_6cdbc47b-1d0f-4562-81ac-00865205eefc.webp",
+    "url": "assets/victory_monarch_throne.webp",
     "type": "image",
     "aspect_ratio": [
       720,
@@ -242,43 +242,43 @@ const assets = {
     ]
   },
   "spear_stab_2": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1779600495681_01KSC79521AE8RNV0NTHVW7FX0.spearstab.mp3",
+    "url": "assets/spear_stab_2.mp3",
     "type": "audio"
   },
   "spear_stab_1": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1779600578640_01KSC7BP17KKYYB5341RD1W0GZ.slash.mp3",
+    "url": "assets/spear_stab_1.mp3",
     "type": "audio"
   },
   "archer_shoot_sfx": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1779600904545_01KSC7NMB116BVZ53JRVAVHAVC.arrow.mp3",
+    "url": "assets/archer_shoot_sfx.mp3",
     "type": "audio"
   },
   "unit_grunt_2": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1779601354947_01KSC83C63RN93ZV0RKC5NMD5X.grunt.mp3",
+    "url": "assets/unit_grunt_2.mp3",
     "type": "audio"
   },
   "cannon_explosion": {
-    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/sounds/effect/cannon_explosion_5b3bf83f-d36c-4ac0-835f-b264aee8c7f7.mp3",
+    "url": "assets/cannon_explosion.mp3",
     "type": "audio"
   },
   "jingle_footsoldier": {
-    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/sounds/effect/jingle_footsoldier_33ea074a-dd86-4dc6-b01a-9a93495113b0.mp3",
+    "url": "assets/jingle_footsoldier.mp3",
     "type": "audio"
   },
   "jingle_spearman": {
-    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/sounds/effect/jingle_spearman_7865b7d5-e8a3-4199-9f13-07af50b6246f.mp3",
+    "url": "assets/jingle_spearman.mp3",
     "type": "audio"
   },
   "jingle_swordsman": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1779606678123_01KSCD5TKB9CJVJ9FP0GB0BFA9.heavymarch.mp3",
+    "url": "assets/jingle_swordsman.mp3",
     "type": "audio"
   },
   "jingle_archer": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1779606825087_01KSCDAA3ZPGD4TF119YH6S5MF.crossbo.mp3",
+    "url": "assets/jingle_archer.mp3",
     "type": "audio"
   },
   "icon_damage": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1779702923599_01KSF8Z0AFEE43GQ8WSHX1Q2HD.swords.webp",
+    "url": "assets/icon_damage.webp",
     "type": "image",
     "aspect_ratio": [
       256,
@@ -286,7 +286,7 @@ const assets = {
     ]
   },
   "loading_background_cinematic_charge_v2": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1779704516763_01KSFAFM4VA4MTKG37HTMZ4P65.grok-image-3703846f-0ce3-490b-9bd1-ab3f6358f0fb.webp",
+    "url": "assets/loading_background_cinematic_charge_v2.webp",
     "type": "image",
     "aspect_ratio": [
       640,
@@ -294,19 +294,19 @@ const assets = {
     ]
   },
   "paper_unfurl_sfx": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1779775192372_01KSHDWF9MNQ1YAD39QN6XQ9P3.paper_flap.mp3",
+    "url": "assets/paper_unfurl_sfx.mp3",
     "type": "audio"
   },
   "ui_click_sfx": {
-    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/sounds/effect/ui_click_sfx_a5ab26a8-ff53-4785-9000-baed984a38fd.mp3",
+    "url": "assets/ui_click_sfx.mp3",
     "type": "audio"
   },
   "ui_hover_sfx": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1780425116756_01KT4SPK2MXY45YV9MD4BV3ZN2.click.mp3",
+    "url": "assets/ui_hover_sfx.mp3",
     "type": "audio"
   },
   "knighticon.webp": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1779776155171_01KSHESVH3XDJFY62AMMBQEKGW.knighticon.webp",
+    "url": "assets/knighticon.webp",
     "type": "image",
     "aspect_ratio": [
       476,
@@ -314,23 +314,23 @@ const assets = {
     ]
   },
   "unit_grunt_7": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1779776963466_01KSHFJGWAVTH7R87F1PQXFZ9G.unit_grunt_7.mp3",
+    "url": "assets/unit_grunt_7.mp3",
     "type": "audio"
   },
   "unit_grunt_6.mp3": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1779777136091_01KSHFQSEVPNA63AYTV7RZ3ZD8.unit_grunt_6.mp3",
+    "url": "assets/unit_grunt_6.mp3",
     "type": "audio"
   },
   "jingle_knight": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1779778491446_01KSHH151PF55R0PSFXCWJRQRM.buglecharge.mp3",
+    "url": "assets/jingle_knight.mp3",
     "type": "audio"
   },
   "ui_command_phase_start": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1779778644726_01KSHH5TQPRNS2BAC7TT2JKJM6.commandphase.mp3",
+    "url": "assets/ui_command_phase_start.mp3",
     "type": "audio"
   },
   "victory_trumpet_fanfare": {
-    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/victory_trumpet_fanfare_9e4c05ae-b143-4ed9-95b0-eb024e1edea4.webp",
+    "url": "assets/victory_trumpet_fanfare.webp",
     "type": "image",
     "aspect_ratio": [
       1187,
@@ -338,15 +338,15 @@ const assets = {
     ]
   },
   "victory_jingle_simple.mp3": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1779961483443_01KSPZHM5KHMZ4ESG371S4X2W3.victory_jingle_simple.mp3",
+    "url": "assets/victory_jingle_simple.mp3",
     "type": "audio"
   },
   "casual_medieval_military_bgm": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1779964314717_01KSQ2812XNPG8HA92TSBZNGX1.military_bgm.mp3",
+    "url": "assets/casual_medieval_military_bgm.mp3",
     "type": "audio"
   },
   "victory_monarch_throne_cheater": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1779968376234_01KSQ63ZDAJ6YR3571NG89CJ3F.victory_monarch_throne_cheater_e0ac1b93-f5cc-46ee-adec-4cc4937f9b07.webp",
+    "url": "assets/victory_monarch_throne_cheater.webp",
     "type": "image",
     "aspect_ratio": [
       720,
@@ -354,7 +354,7 @@ const assets = {
     ]
   },
   "level_6_bg.webp": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1779836879852_01KSK8Q0ZC0N398E0JWQX9RG9V.Untitled.webp",
+    "url": "assets/level_6_bg.webp",
     "type": "image",
     "aspect_ratio": [
       1024,
@@ -362,11 +362,11 @@ const assets = {
     ]
   },
   "victory_jingle.mp3": {
-    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/sounds/effect/victory_jingle_0e3d49dd-4a6c-4373-b2f6-f21f846e3905.mp3",
+    "url": "assets/victory_jingle.mp3",
     "type": "audio"
   },
   "saitama": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1780211635249_01KSYE3N1HATR38DS36NKP8CSQ.saitama_97c39e03-f3ea-472a-88b0-d8e7b3c17408.webp",
+    "url": "assets/saitama.webp",
     "type": "image",
     "aspect_ratio": [
       325,
@@ -374,23 +374,23 @@ const assets = {
     ]
   },
   "saitama_punch_1": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1780212758772_01KSYF5Y7MB5G1817DYMKE53DY.punch.mp3",
+    "url": "assets/saitama_punch_1.mp3",
     "type": "audio"
   },
   "saitama_punch_2": {
-    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/sounds/effect/saitama_punch_2_b9fc462a-b6e7-4771-b696-028817667d5d.mp3",
+    "url": "assets/saitama_punch_2.mp3",
     "type": "audio"
   },
   "saitama_punch_3": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1780212538797_01KSYEZ7DDJH5W5JYEH101EJ79.punch3.mp3",
+    "url": "assets/saitama_punch_3.mp3",
     "type": "audio"
   },
   "saitama_punch_4": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1780212977753_01KSYFCM2S6D9NMQE9V0XJ29GB.563356__nicholasdaryl__cartoonpunch.mp3",
+    "url": "assets/saitama_punch_4.mp3",
     "type": "audio"
   },
   "player_knight_new": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1780223880149_01KSYSSAYNSG88Z37EVC6J66EX.knightsprite.webp",
+    "url": "assets/player_knight_new.webp",
     "type": "image",
     "aspect_ratio": [
       435,
@@ -398,7 +398,7 @@ const assets = {
     ]
   },
   "player_archer_field": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1780296493233_01KT0Z1A5HWQ3YHR0K0JMNEF8E.archer_back.webp",
+    "url": "assets/player_archer_field.webp",
     "type": "image",
     "aspect_ratio": [
       236,
@@ -406,7 +406,7 @@ const assets = {
     ]
   },
   "card_background.webp": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1780296725934_01KT0Z8DDE9JT27YX3W0X5QPAC.card_background.webp",
+    "url": "assets/card_background.webp",
     "type": "image",
     "aspect_ratio": [
       240,
@@ -414,7 +414,7 @@ const assets = {
     ]
   },
   "player_spearman_field": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1780300524262_01KT12WAQ6JCZAG5EH81EZVPZW.spear.webp",
+    "url": "assets/player_spearman_field.webp",
     "type": "image",
     "aspect_ratio": [
       192,
@@ -422,7 +422,7 @@ const assets = {
     ]
   },
   "swordsman.webp": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1780365129971_01KT30FY7KP8SK7EWQJ4AF271X.swordsmal.webp",
+    "url": "assets/swordsman.webp",
     "type": "image",
     "aspect_ratio": [
       172,
@@ -430,7 +430,7 @@ const assets = {
     ]
   },
   "player_footsoldier_field": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1780314453118_01KT1G5D3Y9PEJB1QCNSQN27JG.footsoldier.webp",
+    "url": "assets/player_footsoldier_field.webp",
     "type": "image",
     "aspect_ratio": [
       243,
@@ -438,7 +438,7 @@ const assets = {
     ]
   },
   "battlefield_level_1": {
-    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/battlefield_level_1_fc1ae48c-e9b1-451c-96fb-231227fef494.webp",
+    "url": "assets/battlefield_level_1.webp",
     "type": "image",
     "aspect_ratio": [
       832,
@@ -446,7 +446,7 @@ const assets = {
     ]
   },
   "icon_health": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1780387798493_01KT3P3QEXYYTRTXMT77XQMD6X.icon_health_57468c6e-ca24-4e46-a397-32bbd7a5588c.webp",
+    "url": "assets/icon_health.webp",
     "type": "image",
     "aspect_ratio": [
       87,
@@ -454,11 +454,11 @@ const assets = {
     ]
   },
   "click.mp3": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1780390315385_01KT3RGHBSQE5GG4T77635KSM7.click.mp3",
+    "url": "assets/click.mp3",
     "type": "audio"
   },
   "blood_puddle": {
-    "url": "https://d16qq0o35va7kz.cloudfront.net/images/Google_115566684854967012242/1780823124378_01KTGN8TCTAZPDGZFW08CRANWB.blood.webp",
+    "url": "assets/blood_puddle.webp",
     "type": "image",
     "aspect_ratio": [
       91,

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Metamorphous&family=Inter:wght@400;600;700&display=swap"
         rel="stylesheet">
+    <script src="asset_map"></script>
     <style>
         /* CSS Reset */
         *,
@@ -56,9 +57,14 @@
 
         #game-world {
             position: relative;
-            width: 100%;
-            height: 100%;
+            width: 720px;
+            height: 1280px;
             background-color: #4a7c3f;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+            overflow: hidden;
+            transform: scale(var(--scale-factor, 1));
+            transform-origin: center center;
+            flex-shrink: 0;
         }
 
         #game-world::after {
@@ -2582,6 +2588,70 @@
     </div>
 
     <script>
+        function updateScale() {
+            const scale = Math.min(window.innerWidth / 720, window.innerHeight / 1280);
+            document.documentElement.style.setProperty('--scale-factor', scale);
+        }
+        window.addEventListener('resize', updateScale);
+        updateScale();
+
+        const lib = {
+            getAsset(id) {
+                if (typeof assets !== 'undefined') {
+                    return assets[id];
+                }
+                return undefined;
+            },
+            log(message) {
+                console.log(message);
+            },
+            getUserGameState() {
+                try {
+                    const saved = localStorage.getItem('breach20_save_state');
+                    return Promise.resolve({ success: true, state: saved ? JSON.parse(saved) : null });
+                } catch (e) {
+                    console.error('Failed to load local state:', e);
+                    return Promise.resolve({ success: false, state: null });
+                }
+            },
+            saveUserGameState(state) {
+                try {
+                    localStorage.setItem('breach20_save_state', JSON.stringify(state));
+                    return Promise.resolve({ success: true });
+                } catch (e) {
+                    console.error('Failed to save local state:', e);
+                    return Promise.resolve({ success: false });
+                }
+            },
+            showGameParameters(options) {
+                console.log('Game Parameters registered:', options);
+            }
+        };
+
+        window.gameConfig = window.gameConfig || {
+            "units": {
+                "footsoldier": { "coinCost": -4, "damage": 1, "health": 2, "attackRange": 1, "moveSpeed": 2.39, "attackCooldown": 0.9, "unlockCost": 0 },
+                "spearman": { "coinCost": -1, "damage": 1, "health": 2, "attackRange": 2, "moveSpeed": 1.6, "attackCooldown": 0.9, "unlockCost": 0 },
+                "swordsman": { "coinCost": 3, "damage": 2, "health": 5, "attackRange": 1, "moveSpeed": 1.6, "attackCooldown": 0.9, "unlockCost": 0 },
+                "archer": { "coinCost": 2, "damage": 1, "health": 1, "attackRange": 7, "moveSpeed": 1.6, "attackCooldown": 0.9, "unlockCost": 0 },
+                "knight": { "coinCost": 7, "damage": 2, "health": 8, "attackRange": 1, "moveSpeed": 4.47, "attackCooldown": 0.9, "unlockCost": 0 },
+                "elite_guard": { "attackRange": 1.5, "moveSpeed": 1.12, "attackCooldown": 1.5, "coinCost": 0, "unlockCost": 0, "damage": 1, "health": 10 },
+                "saitama": { "coinCost": 0, "damage": 99, "health": 99, "attackRange": 1, "moveSpeed": 3.51, "attackCooldown": 0.25, "unlockCost": 0 }
+            },
+            "gameRules": { "startingCoins": 1, "combatPhaseDuration": 5.25, "unitsPerWave": 20, "healthToWin": 20, "alertRange": 400, "damageDelay": 0.08, "breachExtraDistance": 35 },
+            "aiSettings": { "startingCoins": 2, "deploymentStrategy": "most_expensive" },
+            "worldMap": {
+                "pois": [
+                    { "y": 88.14, "desc": "Fight against Duke Dulledge and his training infantry.", "x": 50, "name": "Humble Hearths", "commanderName": "Duke Dulledge", "commanderDesc": "His wit is as blunt as his blade. Uses infantry only.", "victoryMessage": "The hamlet is secured. Duke Dulledge retreats to his manor to polish his blunt sword." },
+                    { "name": "Archer's Acre", "x": 44.17, "desc": "Survive Mistress Misshot's endless rain of arrows.", "y": 69.73, "aiType": "archer_swarm", "commanderName": "Mistress Misshot", "commanderDesc": "She calls all her misses \"warning shots\". Uses Archers.", "victoryMessage": "Mistress Misshot has broken her bow! The path to the capital is clear of arrows." },
+                    { "y": 54.16, "desc": "Gallop into battle against Sir Swift and his royal cavalry.", "x": 67.33, "name": "Monarch’s Mounts", "aiType": "swordsman_heavy", "commanderName": "Sir Swift", "commanderDesc": "He smells exactly like his horse. Uses Knights.", "victoryMessage": "Sir Swift and his cavalry have been unhorsed. The royal stables now fly the blue banner." },
+                    { "y": 42.83, "name": "Fighting Fields", "desc": "Test your steel against Baron Breach and his diverse warband.", "x": 49.44, "aiType": "swordsman_heavy", "commanderName": "Baron Breach", "commanderDesc": "A \"well rounded\" individual. Uses a variety of units.", "victoryMessage": "Baron Breach has been breached! The fighting fields are ours, and the Grand Castle lies ahead." },
+                    { "y": 32.66, "name": "Crown Crossing", "desc": "Face the disciplined High Guard and their elite knight chargers.", "x": 50, "commanderName": "Captain Courageous", "commanderDesc": "Elite commander. Disciplined. Well funded.", "aiType": "knight_rush", "victoryMessage": "Captain Courageous' elite lines have buckled. The gates to the Monarch's throne room are wide open." },
+                    { "name": "The Grand Castle", "desc": "Overthrow The Monarch in a final clash of all arms.", "x": 50, "y": 21.72, "commanderName": "The Monarch", "commanderDesc": "Final challenge. Employs every tactic.", "victoryMessage": "The Monarch has fallen. A new era begins as the blue army claims the throne of the realm!" }
+                ]
+            }
+        };
+
         /**
          * BREACH 20
          * 
@@ -6449,7 +6519,10 @@
             }
         }
 
+        let runCalled = false;
         async function run(mode) {
+            if (runCalled) return;
+            runCalled = true;
             const canvas = document.getElementById('game-canvas');
             canvas.width = 720;
             canvas.height = 1280;
@@ -6466,6 +6539,13 @@
                 }
             });
         }
+
+        if (typeof window.mode === 'undefined') {
+            window.mode = 'play';
+        }
+        window.addEventListener('DOMContentLoaded', () => {
+            run(window.mode);
+        });
     </script>
 </body>
 
