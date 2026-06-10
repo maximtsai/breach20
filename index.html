@@ -6263,17 +6263,27 @@
             }
 
             updateTooltipPosition(card, tooltip) {
-                const rect = card.getBoundingClientRect();
+                const gameWorld = document.getElementById('game-world');
+                if (!gameWorld) return;
+                
+                const cardRect = card.getBoundingClientRect();
+                const worldRect = gameWorld.getBoundingClientRect();
+                
+                const scale = worldRect.width / 720;
+                
+                const localCardLeft = (cardRect.left - worldRect.left) / scale;
+                const localCardWidth = cardRect.width / scale;
+                const localCenterX = localCardLeft + localCardWidth / 2;
+                
                 const tooltipWidth = 420;
-                const centerX = rect.left + rect.width / 2;
-
+                
                 let offset = 0;
-                if (centerX - tooltipWidth / 2 < 10) {
-                    offset = 10 - (centerX - tooltipWidth / 2);
-                } else if (centerX + tooltipWidth / 2 > 710) {
-                    offset = 710 - (centerX + tooltipWidth / 2);
+                if (localCenterX - tooltipWidth / 2 < 10) {
+                    offset = 10 - (localCenterX - tooltipWidth / 2);
+                } else if (localCenterX + tooltipWidth / 2 > 710) {
+                    offset = 710 - (localCenterX + tooltipWidth / 2);
                 }
-
+                
                 tooltip.style.left = `calc(50% + ${offset}px)`;
             }
 
